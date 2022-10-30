@@ -1,0 +1,122 @@
+.container{
+    background-color: rgb(255, 180, 217);
+    height: 100vh;
+}
+
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+#donald{
+    width: 50px;
+    height: 70px;
+    background-image:  url(./img/Donald-Duck-PNG-Picture.png);
+    background-size: 50px 70px;
+    position: relative;
+    top: 80px;
+}
+
+#dildo{
+    width: 35px;
+    height: 50px;
+    background-image: url(./img/dildo.png);
+    background-size: 35px 50px;
+    position: relative;
+    top: 157px;
+    left: 570px;
+    
+}
+
+.start-game{
+    animation: dildoMov 2s infinite linear; 
+    /* Infinite - бесконечная анимация, linear - ускорение */
+}
+
+@keyframes dildoMov {
+    0% {
+    left: 580px;
+    }
+    100% {
+        left: -30px;
+    }
+}
+
+
+.jump{
+    animation: jump 0.7s infinite linear; 
+}
+
+@keyframes jump {
+    0% {
+        top: 80px;
+    }
+
+    30% {
+        top: 40px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    80% {
+        top: 40px;
+    }
+
+    100% {
+        top: 80px;
+    }
+}
+
+.btns{
+    display: flex;
+    column-gap: 10px;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.btn{
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(20, 105, 190);
+}
+
+.btn:active{
+    background-color: dodgerblue;
+}
+
+.lose{
+    position: absolute;
+    top: 20px;
+    background-color: rgb(255, 20, 145);
+    border-radius: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trollface{
+    height: 300px;
+}
+
+.hidden{
+    display: none;
+}
+
+.counter{
+    font-size: 50px;
+    font-weight: 800;
+    margin: auto;
+    width: fit-content;
+    padding-top: 20px;
+}
